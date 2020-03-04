@@ -30,6 +30,6 @@ app.use(express.json());
 // route middlewares
 app.use("/api/user", authRoute);
 app.use("/api/posts", postsRoute);
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server up and running");
 });
